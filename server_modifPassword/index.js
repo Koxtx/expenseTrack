@@ -29,6 +29,7 @@ const { generalLimiter } = require("./middlewares/rateLimiteMiddleware");
 app.use(generalLimiter);
 
 app.use(routes);
+app.set("trust proxy", 1);
 
 app.get(/(.*)/, (req, res) => {
   res.sendFile(path.join(__DIRNAME, "client", "dist", "index.html"));
