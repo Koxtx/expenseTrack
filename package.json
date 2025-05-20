@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server":"nodemon server_modifPassword/index.js",
-    "start":"node server_modifPassword/index.js",
-    "build":"npm install && npm install --prefix client_modifPassword && npm run buil --prefix client_modifPassword"
+    "server": "nodemon server_modifPassword/index.js",
+    "start": "node server_modifPassword/index.js",
+    "build": "npm install && npm install --prefix client_modifPassword && npm run build --prefix client_modifPassword"
   },
   "keywords": [],
   "author": "",
