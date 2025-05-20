@@ -25,11 +25,11 @@ app.use(express.static(path.join(__DIRNAME, "client_modifPassword/dist")));
 
 const routes = require("./routes");
 const { generalLimiter } = require("./middlewares/rateLimiteMiddleware");
+app.set("trust proxy", 1);
 
 app.use(generalLimiter);
 
 app.use(routes);
-app.set("trust proxy", 1);
 
 app.get(/(.*)/, (req, res) => {
   res.sendFile(path.join(__DIRNAME, "client", "dist", "index.html"));
