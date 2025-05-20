@@ -1,0 +1,10 @@
+node_modules
+dist
+server_modifPassword/node_modules
+server_modifPassword/.env
+server_modifPassword/package-lock.json
+client_modifPassword/node_modules
+client_modifPassword/.env
+client_modifPassword/package-lock.json
+.env
+package-lock.json
